@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
 import LoginPage from '../pages/LoginPage';
 import HomePage from '../pages/HomePage';
-import LoginpageConstants from '../pages/constants/loginpage.constants.json'
-import HomepageConstants from '../pages/constants/homepage.constants.json'
-import Credentials from '../credentials.json'
+import LoginpageConstants from '../pages/constants/loginpage.constants.json';
+import HomepageConstants from '../pages/constants/homepage.constants.json';
+import Credentials from '../credentials.json';
 
 test('Negative Scenario - Login with incorrect password', async ({ page }) => {
     const loginPage = new LoginPage(page);
@@ -16,7 +16,7 @@ test('Negative Scenario - Login with incorrect password', async ({ page }) => {
     expect(errorMessage).toContain(LoginpageConstants.unsuccessfulLoginText);
 });
 
-test('Positive Scenario - Login with incorrect password', async ({ page }) => {
+test('Positive Scenario - Login with correct credentials', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.navigate();
 
