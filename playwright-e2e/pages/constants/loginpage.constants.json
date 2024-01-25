@@ -1,0 +1,8 @@
+{
+    "url": "https://ebepirus.natech.gr/el/Account/UserLogin",
+    "usernameTextviewSelector": "#UserName",
+    "passwordTextviewSelector": "#Password",
+    "loginButtonSelector": "#LoginForm > div > button",
+    "unsuccessfulLoginTextSelector": "#LoginForm > div > p > small > strong",
+    "unsuccessfulLoginText": "Μη έγκυρη προσπάθεια σύνδεσης."
+}
