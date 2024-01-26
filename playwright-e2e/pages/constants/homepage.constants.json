@@ -2,5 +2,7 @@
     "url": "https://ebepirus.natech.gr/el/Home/Index",
     "homeScreenSelector": "#HomeScreen",
     "createNewAccountButtonSelector": "#deposits>.card-body>div>.btn.btn-success",
-    "taxPayerPersonalInfoSelector": ".card-body>#aforContent"
+    "taxPayerPersonalInfoSelector": ".card-body>#aforContent",
+    "myDepositsTitleSelector":"#deposits > div > div.card-title.mb-3 > h5",
+    "myDepositsExpectedText": "Οι Καταθέσεις Μου"
 }

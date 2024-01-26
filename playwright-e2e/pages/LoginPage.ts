@@ -1,5 +1,6 @@
 import { Page } from '@playwright/test';
 import LoginpageConstants from './constants/loginpage.constants.json';
+import Credentials from '../credentials.json';
 
 export default class LoginPage {
   private page: Page;
@@ -14,5 +15,12 @@ export default class LoginPage {
 
   async clickLoginButton(): Promise<void> {
     await this.page.locator(LoginpageConstants.loginButtonSelector).click();
+  }
+
+  async login(): Promise<void> {
+    await this.navigate();
+    await this.page.fill(LoginpageConstants.usernameTextviewSelector, Credentials.username);
+    await this.page.fill(LoginpageConstants.passwordTextviewSelector, Credentials.password);
+    await this.clickLoginButton();
   }
 }
