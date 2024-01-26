@@ -1,4 +1,6 @@
 {
     "url": "https://ebepirus.natech.gr/el/Home/Index",
-    "homeScreenSelector": "#HomeScreen"
+    "homeScreenSelector": "#HomeScreen",
+    "createNewAccountButtonSelector": "#deposits>.card-body>div>.btn.btn-success",
+    "taxPayerPersonalInfoSelector": ".card-body>#aforContent"
 }
