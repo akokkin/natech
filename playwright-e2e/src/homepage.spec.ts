@@ -6,14 +6,21 @@ import HomepageConstants from '../pages/constants/homepage.constants.json';
 import Credentials from '../credentials.json';
 
 
-test.beforeEach(async ({ page }) => {
-    const loginPage = new LoginPage(page);
-    await loginPage.login();
-});
+// test.beforeEach(async ({ page }) => {
+//     const loginPage = new LoginPage(page);
+//     await loginPage.login();
+// });
 
 test.describe('Homepage', () => {
-    test('should contain the correct views and information.', async ({ page }) => {
-        console.log("@@@" + await page.innerText(HomepageConstants.myDepositsTitleSelector));
-        expect(await page.innerText(HomepageConstants.myDepositsTitleSelector)).toBe(HomepageConstants.myDepositsExpectedText);
+    test('should contain the correct "Deposits" view and information.', async ({ page }) => {
+        const loginPage = new LoginPage(page);
+        await loginPage.login();
+
+        const myDepositsCorrectedTitle = ((await page.innerText(HomepageConstants.myDepositsTitleXpathSelector)).trim()).toLowerCase();
+        const taxReductionsCorrectedTitle = ((await page.innerText(HomepageConstants.taxReductionTitleXpathSelector)).trim()).toLowerCase();
+        const exchangeRatesCorrectedTitle = ((await page.innerText(HomepageConstants.exchangeRatesTitleXpathSelector)).trim()).toLowerCase();
+        expect(myDepositsCorrectedTitle).toBe(HomepageConstants.myDepositsTitleExpectedText);
+        expect(taxReductionsCorrectedTitle).toBe(HomepageConstants.taxReductionTitleExpectedText);
+        expect(exchangeRatesCorrectedTitle).toBe(HomepageConstants.exchangeRatesTitleExpectedText);
     });
 });

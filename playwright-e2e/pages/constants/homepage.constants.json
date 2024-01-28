@@ -3,6 +3,10 @@
     "homeScreenSelector": "#HomeScreen",
     "createNewAccountButtonSelector": "#deposits>.card-body>div>.btn.btn-success",
     "taxPayerPersonalInfoSelector": ".card-body>#aforContent",
-    "myDepositsTitleSelector":"#deposits > div > div.card-title.mb-3 > h5",
-    "myDepositsExpectedText": "Οι Καταθέσεις Μου"
+    "myDepositsTitleXpathSelector": "//*[@id=\"deposits\"]/div/div[1]/h5",
+    "myDepositsTitleExpectedText": "οι καταθέσεις μου",
+    "taxReductionTitleXpathSelector": "//*[@id=\"afor\"]/div[1]/h5",
+    "taxReductionTitleExpectedText": "δαπάνες μείωσης φόρου",
+    "exchangeRatesTitleXpathSelector": "//*[@id=\"currencyRates\"]/div/h5",
+    "exchangeRatesTitleExpectedText": "τιμές συναλλάγματος"
 }
