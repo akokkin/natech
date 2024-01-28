@@ -12,7 +12,8 @@ export default class HomePage {
     await this.page.goto(HomepageConstants.url);
   }
 
-  // async clickLoginButton(): Promise<void> {
-  //   await this.page.locator(HomepageConstants.).click();
-  // }
+  async logOut(): Promise<void> {
+    await this.page.locator(HomepageConstants.logOutButtonSelector).click();
+    await this.page.locator(HomepageConstants.disconnectModalButtonSelector).click();
+  }
 }

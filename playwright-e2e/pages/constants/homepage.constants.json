@@ -8,5 +8,20 @@
     "taxReductionTitleXpathSelector": "//*[@id=\"afor\"]/div[1]/h5",
     "taxReductionTitleExpectedText": "δαπάνες μείωσης φόρου",
     "exchangeRatesTitleXpathSelector": "//*[@id=\"currencyRates\"]/div/h5",
-    "exchangeRatesTitleExpectedText": "τιμές συναλλάγματος"
+    "exchangeRatesTitleExpectedText": "τιμές συναλλάγματος",
+    "savingsAccountsArrowSelector": "#arrowIDAccount-0",
+    "savingsAccountsListViewSelector": "#\\31 -1",
+    "checkingAccountsArrowSelector": "#arrowIDAccount-1",
+    "logOutButtonSelector": ".text-danger>.icon-exit.fa-lg",
+    "disconnectModalButtonSelector": ".modal-footer> .btn-sm.btn-outline-danger.dontOpenDialog",
+    "accountsOwnersSelector": ".col-sm-9 > div:nth-child(2)",
+    "savingsAccountOwnerExpectedText": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΑΘΑΝΑΣΙΟΣ ΤΕΣΤ",
+    "checkingAccountOwnerExpectedText": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΑΘΑΝΑΣΙΟΣ ΤΕΣΤ2",
+    "ibansSelector": "div.col-sm-9 > div:nth-child(3) > b > span",
+    "savingsIbanExpectedText": "GR0707500010010011071670006",
+    "checkingIbanExpectedText": "GR1607500010030011071670008",
+    "depositAccountNumbersSelector": ".col-sm-9 > div:nth-child(4)",
+    "savingsAcountExpectedNumber": "1001107167000-6",
+    "checkingAcountExpectedNumber": "3001107167000-8",
+    "taxReductionNameSelector": "#aforContent > strong:nth-child(2)"  
 }
