@@ -14,6 +14,8 @@ export default class HomePage {
 
   async logOut(): Promise<void> {
     await this.page.locator(HomepageConstants.logOutButtonSelector).click();
-    await this.page.locator(HomepageConstants.disconnectModalButtonSelector).click();
+    const disconnectButton = this.page.locator(HomepageConstants.disconnectModalButtonSelector);
+    await disconnectButton.waitFor({ state: 'visible' });
+    await disconnectButton.click();
   }
 }

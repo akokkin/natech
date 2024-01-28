@@ -17,7 +17,7 @@ export default class LoginPage {
     await this.page.locator(LoginpageConstants.loginButtonSelector).click();
   }
 
-  async login(): Promise<void> {
+  async logIn(): Promise<void> {
     await this.navigate();
     await this.page.fill(LoginpageConstants.usernameTextviewSelector, Credentials.username);
     await this.page.fill(LoginpageConstants.passwordTextviewSelector, Credentials.password);

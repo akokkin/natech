@@ -13,7 +13,7 @@
     "savingsAccountsListViewSelector": "#\\31 -1",
     "checkingAccountsArrowSelector": "#arrowIDAccount-1",
     "logOutButtonSelector": ".text-danger>.icon-exit.fa-lg",
-    "disconnectModalButtonSelector": ".modal-footer> .btn-sm.btn-outline-danger.dontOpenDialog",
+    "disconnectModalButtonSelector": "#LogOutModal>.modal-dialog>.modal-content>.modal-footer>.btn.btn-sm.btn-outline-danger.dontOpenDialog",
     "accountsOwnersSelector": ".col-sm-9 > div:nth-child(2)",
     "savingsAccountOwnerExpectedText": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΑΘΑΝΑΣΙΟΣ ΤΕΣΤ",
     "checkingAccountOwnerExpectedText": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΑΘΑΝΑΣΙΟΣ ΤΕΣΤ2",
@@ -23,5 +23,18 @@
     "depositAccountNumbersSelector": ".col-sm-9 > div:nth-child(4)",
     "savingsAcountExpectedNumber": "1001107167000-6",
     "checkingAcountExpectedNumber": "3001107167000-8",
-    "taxReductionNameSelector": "#aforContent > strong:nth-child(2)"  
+    "taxReductionNameSelector": "#aforContent > strong:nth-child(2)",
+    "taxReductionNameExpectedText": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΑΘΑΝΑΣΙΟΣ",
+    "taxReductionVATSelector": "#aforContent > strong:nth-child(4)",
+    "taxReductionVATExpectedText": "045368490",
+    "taxReductionAmountSelector": "#aforContent > .amountToHide",
+    "taxReductionAmountExpectedText": "0 €",
+    "toolsButtonSelector": "#Tools2_Btn",
+    "taxReductionCalculatorButtonSelector": "#Tools2 > div:nth-child(2) > a > span",
+    "taxReductionModalSelector": ".modal.fade.show",
+    "taxReductionInputSelector": ".modal.fade.show > div > div > div > div > div > div > div > input",
+    "taxReductionCalculateButtonSelector": ".modal.fade.show> div > div > div > div> div > div > div > button",
+    "taxReductionResultSelector": ".modal.fade.show > div > div > div > #requiredExpenses",
+    "taxReductionResultAmountSelector": "#requiredExpenses > strong",
+    "closeTaxCalculatorModalButtonSelector": ".modal.fade.show> div > div > div > button"
 }
