@@ -25,6 +25,7 @@ This repository contains end-to-end (e2e) tests using Playwright and Postman tes
     "greekFullName": "<fullName-provided-for-tests>",
     "vatNumber": "<account-owners-vat-number>"
 }
+```
 
 3. Install dependencies:
 
