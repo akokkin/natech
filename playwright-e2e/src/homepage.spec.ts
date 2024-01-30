@@ -3,11 +3,6 @@ import LoginPage from '../pages/LoginPage';
 import HomePage from '../pages/HomePage';
 import HomepageConstants from '../pages/constants/homepage.constants.json';
 
-// test.beforeAll(async ({ page }) => {
-//     const loginPage = new LoginPage(page);
-//     await loginPage.login();
-// });
-
 test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.logIn();
